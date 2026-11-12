@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Data and artifacts: never commit datasets or trained models
+data/raw/*
+data/synthetic/*
+!data/raw/.gitkeep
+models/
+mlruns/
+
+# Generated reports (commit only the curated results you cite in the README)
+reports/*
+!reports/.gitkeep
+
+# Notebooks / editors / OS
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
