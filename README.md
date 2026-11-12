@@ -1,6 +1,6 @@
 # Turbofan RUL: Predictive Maintenance on NASA C-MAPSS
 
-[![CI](https://github.com/<your-username>/turbofan-rul/actions/workflows/ci.yml/badge.svg)](https://github.com/<your-username>/turbofan-rul/actions/workflows/ci.yml)
+[![CI](https://github.com/<hussainasghar7>/turbofan-rul/actions/workflows/ci.yml/badge.svg)](https://github.com/<hussainasghar7>/turbofan-rul/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -46,7 +46,7 @@ Each decision is explained in [docs/design-notes.md](docs/design-notes.md).
 ## Quickstart
 
 ```bash
-git clone https://github.com/<your-username>/turbofan-rul.git
+git clone https://github.com/<hussainasghar7>/turbofan-rul.git
 cd turbofan-rul
 python -m venv .venv && .venv\Scripts\activate      # Windows (macOS/Linux: source .venv/bin/activate)
 pip install -e ".[dev]"
