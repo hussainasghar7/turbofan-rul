@@ -1,6 +1,6 @@
 # Turbofan RUL: Predictive Maintenance on NASA C-MAPSS
 
-[![CI](https://github.com/<hussainasghar7>/turbofan-rul/actions/workflows/ci.yml/badge.svg)](https://github.com/<hussainasghar7>/turbofan-rul/actions/workflows/ci.yml)
+[![CI](https://github.com/hussainasghar7/turbofan-rul/actions/workflows/ci.yml/badge.svg)](https://github.com/hussainasghar7/turbofan-rul/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -23,14 +23,13 @@ unknown point, and the task is to predict **how many cycles remain**.
 
 ## Results (FD001)
 
-> _Run `python -m turbofan_rul.train --subset FD001` on the real data and paste
-> `reports/FD001_results.md` here. Never publish numbers from the synthetic data._
+| Model | Val RMSE | Test RMSE | Test RMSE (truth capped) | Test NASA score |
+|---|---:|---:|---:|---:|
+| mean_baseline | 41.59 | 43.07 | 41.94 | 33629 |
+| ridge | 20.47 | 22.33 | 21.26 | 1494 |
+| xgboost | 16.48 | 19.18 | 17.96 | 801 |
 
-| Model | Val RMSE | Test RMSE | Test NASA score |
-|---|---:|---:|---:|
-| Mean baseline | – | – | – |
-| Ridge regression | – | – | – |
-| XGBoost | – | – | – |
+Best model by validation RMSE: **xgboost**
 
 ## Approach
 
